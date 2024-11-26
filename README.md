@@ -1,2 +1,5 @@
 # suwook.gitjub.io
-개인 프로필
+# 👋 Hello, I'm 수욱!
+- 💻 **Standardization expert** working on AI & Big Data
+- 🌍 **ETRI researcher**
+- 📚 Passionate about **international collaboration** and **geospatial technology**
