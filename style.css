@@ -1,49 +1,135 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset */
+body, h1, h2, p, a {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
 }
 
-header {
+/* Header (Hero Section) */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?technology,ai') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-content .btn {
   background-color: #007bff;
   color: white;
-  text-align: center;
-  padding: 1.5rem 0;
-}
-
-header nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 2rem;
-}
-
-#projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.project {
-  background: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
-.project h3 {
+.hero-content .btn:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* About Section */
+.about {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+/* Skills Section */
+.skills {
+  padding: 2rem;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill i {
+  font-size: 3rem;
   color: #007bff;
+  margin-bottom: 0.5rem;
 }
 
-.project p {
-  margin: 0.5rem 0;
+/* Contact Section */
+.contact {
+  padding: 2rem;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+}
+
+.contact .btn {
+  background-color: white;
+  color: #007bff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.contact .btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
