@@ -1,23 +1,49 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
 header {
-    background: #0078D7;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 
-footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  color: #007bff;
+}
+
+.project p {
+  margin: 0.5rem 0;
 }
